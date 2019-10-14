@@ -25,11 +25,12 @@ routes.get('/providers', ProviderController.index);
 
 routes.get('/appointments', AppointmentController.index);
 routes.post('/appointments', AppointmentController.store);
+routes.delete('/appointments/:id', AppointmentController.delete);
 
 routes.get('/schedule', ScheduleController.index);
 
 routes.get('/notification', NotificationController.index);
-routes.push('/notification/:id', NotificationController.store);
+routes.put('/notification/:id', NotificationController.store);
 
 routes.post('/files', upload.single('file'), FileController.store);
 
