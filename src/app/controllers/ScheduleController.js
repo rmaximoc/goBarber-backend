@@ -27,7 +27,7 @@ class ScheduleController {
       },
     });
 
-    return res.json();
+    return res.json(appointments);
   }
 }
 
