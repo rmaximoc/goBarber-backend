@@ -61,7 +61,7 @@ class AvailableController {
       };
     });
 
-    return res.json(appointments);
+    return res.json(available);
   }
 }
 
